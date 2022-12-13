@@ -1,0 +1,86 @@
+.header{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top:36px;
+        padding-bottom: 29px;
+}
+&__btn {
+        // smtablet screen
+     @media screen and (min-width: 992px) {
+padding: 9.5px 38px;
+font-size: 18px;
+line-height: calc(27/ 18);
+border: 2px solid #263238;
+border-radius: 5px;
+background-color: #ffffff;
+}
+   // desktop screen
+     @media screen and (min-width: 1368px) {
+min-width: 312px;
+padding: 18px 54px;
+font-size: 20px;
+line-height: calc(30/ 20);
+}
+}
+}
+
+.logo {
+font-family: inherit;
+font-size: 24px;
+line-height: calc(36 / 24);
+color: #000000;
+&__accent {
+   color:#939393;
+}
+}
+.menu {
+  align-items: center;
+    &__btn {
+        padding: 0;
+         border: none;
+        background-color: transparent;
+        color: #39515E;
+           // smtablet screen
+      @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+&__icon {
+    fill:currentColor;
+     // lgphone screen
+     @media screen and (min-width: 575px) {
+width: 42px; height: 24px;
+  }
+
+  // smtablet screen
+  @media screen and (min-width: 768px) {
+width: 30px; height: 17px;
+  }
+}
+}
+.nav, .header__btn {display: none;
+        // smtablet screen
+      @media screen and (min-width: 992px) {
+        display: block;
+          }
+          }
+.nav {
+   
+    &__list {
+        display: flex;
+        gap:40px;
+         // desktop screen
+  @media screen and (min-width: 1368px) {
+       gap:50px;
+  }
+    }
+    &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    color: #263238;;
+    }
+   
+}

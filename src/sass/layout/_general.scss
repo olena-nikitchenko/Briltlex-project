@@ -1,0 +1,43 @@
+.body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #8F95A5;
+  letter-spacing: 0.03em;
+  background-color: FFFFFF;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+.hidden-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.title {
+margin: 0;
+padding: 0;
+font-weight: 600;
+font-size: 24px;
+line-height: calc(36 / 24);
+color: 000000;
+ 
+}
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
