@@ -1,0 +1,38 @@
+$breakpoints: (
+ 'smphone': 320px,
+  'lgphone': 575px,
+  'smtablet': 768px,
+  'lgtablet': 992px,
+  'desktop': 1338px,
+);
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;  
+  
+  // smphone screen
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+ 
+  // lgphone screen
+  @media screen and (min-width: 575px) {
+width: 521px;
+  }
+
+  // smtablet screen
+  @media screen and (min-width: 768px) {
+    width: 720px;
+  }
+  // smtablet screen
+  @media screen and (min-width: 992px) {
+    width: 960px;
+  }
+
+  // desktop screen
+  @media screen and (min-width: 1368px) {
+    width: 1368px;
+  }
+}
