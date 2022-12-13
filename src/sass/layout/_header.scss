@@ -7,6 +7,11 @@
         padding-bottom: 29px;
 }
 &__btn {
+  &:hover, 
+  &:focus {
+    color: #ffffff;
+    background-color: #263238;
+    }
         // smtablet screen
      @media screen and (min-width: 992px) {
 padding: 9.5px 38px;
