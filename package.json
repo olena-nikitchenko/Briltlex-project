@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://olena-nikitchenko.github.io/olena-nikitchenko",
+  "homepage": "https://olena-nikitchenko.github.io/Briltlex-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /olena-nikitchenko/"
+    "build": "parcel build src/*.html --public-url /Briltlex-project/"
   },
   "repository": {
     "type": "git",
