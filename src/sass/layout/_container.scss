@@ -7,19 +7,16 @@ $breakpoints: (
 );
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-left: auto;
   margin-right: auto;  
-  
-  // smphone screen
-  @media screen and (min-width: 320px) {
-    width: 320px;
-  }
- 
+
   // lgphone screen
   @media screen and (min-width: 575px) {
-width: 521px;
+  width: 521px;
+  padding-right: 15px;
+  padding-left: 15px;
   }
 
   // smtablet screen
@@ -32,7 +29,7 @@ width: 521px;
   }
 
   // desktop screen
-  @media screen and (min-width: 1368px) {
+  @media screen and (min-width: 993px) and (max-width: 1600px) {
     width: 1368px;
   }
 }
