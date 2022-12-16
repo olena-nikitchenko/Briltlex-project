@@ -1,11 +1,14 @@
 .header{
     &__container{
         display: flex;
-        // justify-content: space-between;
         align-items: center;
         padding-top:36px;
         padding-bottom: 29px;
+             @media screen and (min-width: 320px) and (max-width: 991px) {
+     justify-content: space-between;
 }
+}
+
 &__btn {
   &:hover, 
   &:focus {
@@ -14,7 +17,6 @@
     }
         // smtablet screen
      @media screen and (min-width: 992px) {
-margin-left:auto ;
 padding: 9.5px 38px;
 font-size: 18px;
 line-height: calc(27/ 18);
@@ -23,7 +25,7 @@ border-radius: 5px;
 background-color: #ffffff;
 }
    // desktop screen
-     @media screen and (min-width: 993px) and (min-width: 1600px) {
+     @media screen and (min-width: 1338px) {
 min-width: 312px;
 padding: 18px 54px;
 font-size: 20px;
@@ -31,6 +33,7 @@ line-height: calc(30/ 20);
 }
 }
 }
+
 
 .logo {
 font-family: inherit;
@@ -40,6 +43,12 @@ color: #000000;
 &__accent {
    color:#939393;
 }
+ @media screen and (min-width: 992px) {
+  margin-right: 168px;
+          }
+          @media screen and (min-width: 1338px) {
+     margin-right: 236px;
+      }
 }
 .menu {
   align-items: center;
@@ -73,18 +82,20 @@ width: 30px; height: 17px;
           }
           }
 .nav {
-  margin-left: 168px;
+   margin-right: auto;
    
     &__list {
+     
         display: flex;
         gap:40px;
          // desktop screen
-  @media screen and (min-width: 993px) and (min-width: 1600px) {
-     margin-left: 236px;
+  @media screen and (min-width: 1338px) {
       &__list {gap:50px;}
     }
     }
     &__link {
+    padding-top:36px;
+    padding-bottom: 29px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(24 / 16);
