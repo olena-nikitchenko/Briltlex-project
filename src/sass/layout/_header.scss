@@ -1,7 +1,7 @@
 .header{
     &__container{
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
         padding-top:36px;
         padding-bottom: 29px;
@@ -14,6 +14,7 @@
     }
         // smtablet screen
      @media screen and (min-width: 992px) {
+margin-left:auto ;
 padding: 9.5px 38px;
 font-size: 18px;
 line-height: calc(27/ 18);
@@ -22,7 +23,7 @@ border-radius: 5px;
 background-color: #ffffff;
 }
    // desktop screen
-     @media screen and (min-width: 1368px) {
+     @media screen and (min-width: 993px) and (min-width: 1600px) {
 min-width: 312px;
 padding: 18px 54px;
 font-size: 20px;
@@ -72,14 +73,16 @@ width: 30px; height: 17px;
           }
           }
 .nav {
+  margin-left: 168px;
    
     &__list {
         display: flex;
         gap:40px;
          // desktop screen
-  @media screen and (min-width: 1368px) {
-       gap:50px;
-  }
+  @media screen and (min-width: 993px) and (min-width: 1600px) {
+     margin-left: 236px;
+      &__list {gap:50px;}
+    }
     }
     &__link {
     font-weight: 500;
