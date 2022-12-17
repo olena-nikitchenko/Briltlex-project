@@ -1,0 +1,105 @@
+.skills {
+   
+    padding-top: 53px;
+    &__title{
+        margin-bottom: 32px;
+        font-size: 24px;
+        line-height: calc(80 / 24);
+        text-align: center;
+    }
+    &__item {
+    margin-bottom: 21px;
+    background: #F5F5F5; 
+    border-radius: 5px;
+    }
+    &__block {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 38px;
+    
+    }
+    &__img {
+        width: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        font-size: 18px;
+        line-height: calc(80 / 18);
+        color: #263238;
+    }
+    &__text {
+        margin: 0;
+        max-width: 258px;
+        margin-bottom: 33px;
+        font-size: 13px;
+        line-height: calc(20 / 13);
+        color: #8F95A5;;
+
+    }
+       &__btn {
+         &:hover, 
+  
+         &:focus {
+        color: #263238;
+        background-color: #FFFFFF;
+        }
+        min-width: 178px;
+        padding: 12px 41px;
+        font-size: 14px;
+        line-height: calc(21 / 14);
+        color: #FFFFFF;
+        background: #263238;
+        border-radius: 5px;
+    }
+    @media screen and (min-width: 575px) {
+        padding-top: 96px;
+  
+        &__title{
+        margin-bottom: 13px;
+        font-size: 30px;
+        line-height: calc(80 / 30);
+        text-align: center;
+        }
+        &__list { 
+         width: 490px;
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 30px;
+        justify-content: start;
+        }
+        &__item {
+        width: 230px;
+        margin-bottom: 0;
+     
+        }
+        &__img {
+        width: 185px;
+        height: 185px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        }
+        &__block {
+        display: flex;
+        flex-direction: column;
+        min-height: 414px;
+        padding-left: 15px;
+        padding-right: 25px;
+        padding-bottom:36px;
+        }     
+        &__text {
+        flex-grow: 1;
+        max-width: 214px;
+        margin-bottom: 24px;
+       }
+         &__discr {
+             margin-bottom: 24px;
+         }
+         &__btn {
+        margin-top: auto;
+        min-width: 200px;
+        padding: 12.5px 52px;
+              }
+}
+}
