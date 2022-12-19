@@ -69,7 +69,7 @@
         justify-content: start;
         }
         &__item {
-        width: 230px;
+        width: calc((100% - 30px) / 2);
         margin-bottom: 0;
      
         }
@@ -97,9 +97,101 @@
              margin-bottom: 24px;
          }
          &__btn {
-        margin-top: auto;
         min-width: 200px;
         padding: 12.5px 52px;
               }
+}
+ @media screen and (min-width: 768px) {
+        padding-top: 56px;
+  
+        &__title{
+        margin-bottom: 37px;
+              }
+        &__list { 
+            position: relative;
+         width: 692px;
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 10px;
+        justify-content: start;
+        }
+        &__item {
+        width: calc((100% - 2*10px) / 3);
+        min-height: auto;
+        margin-bottom: 0;
+        padding-top: 31px;
+        &:nth-child(n + 2) {
+        max-height: 493px;
+        padding-top: 14px;
+        & > .skills__img {
+        width: 200px;
+        height: 200px;
+        }
+        & > .skills__block {
+        padding-bottom: 17px;
+        }
+        }
+        &:last-child {
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        right: 0;
+        transform: translateY(28%);
+        width: 460px;
+        max-height: 242px;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: auto;
+        margin-bottom: 0;
+        padding-top: 0;
+        & > .skills__img {
+       
+            width: 202px;
+            height: 134px;
+            margin-top: 59px;}
+         
+        & > .skills__block {
+        order: -1;        
+        padding-left: 22px;
+        padding-right: 0;
+        padding-bottom: 26px;
+        & .skills__text {
+        max-width: 231px;
+        margin-bottom: 6px;
+       }
+        }
+     }
+        }
+        &__img {
+        width: 214px;
+        height: 214px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        }
+        
+        &__block {
+        display: block;
+        min-height: auto;
+        padding-left: 17px;
+        padding-right: 10px;
+        padding-bottom: 37px;
+        }
+        &__subtitle {
+        font-size: 20px;
+        line-height: calc(80 / 20);
+        color: #263238;
+    }     
+        &__text {
+        max-width: 214px;
+        margin-bottom: 32px;
+       }
+         &__discr {
+             margin-bottom: 32px;
+         }
+         &__btn {
+        min-width: 178px;
+        padding: 12.5px 41px;
+         }
 }
 }
